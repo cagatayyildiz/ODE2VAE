@@ -409,7 +409,7 @@ class ODE2VAE(object):
 		self.vae_rec_optimizer = tf.train.AdamOptimizer(self.expdec).minimize(-self.reconstr_lhood, \
 			name='adam_vae_rec',var_list=vae_vars,global_step=self.global_step)
 
-	def integrate(self,X,dt=0.1):
+	def integrate(self,X,t=None,dt=0.1):
 		t  = dt * np.arange(0,X.shape[1],dtype=np.float32)
 		st = self.sess.run((self.st_L), feed_dict={tf.get_default_graph().get_tensor_by_name('X:0'):X,\
 														  tf.get_default_graph().get_tensor_by_name('t:0'):t,
@@ -418,7 +418,7 @@ class ODE2VAE(object):
 		st = np.reshape(st,(-1,X.shape[0]*self.L,self.q)) # [T,N*L,D]
 		st = np.transpose(st,[1,2,0]) # [N*L,D,T]
 		return st
-	def reconstruct(self,X,dt=0.1):
+	def reconstruct(self,X,t=None,dt=0.1):
 		t  = dt * np.arange(0,X.shape[1],dtype=np.float32)
 		Xrec = self.sess.run(self.x_rec_mu_mu, feed_dict={tf.get_default_graph().get_tensor_by_name('X:0'):X,\
 														  tf.get_default_graph().get_tensor_by_name('t:0'):t,

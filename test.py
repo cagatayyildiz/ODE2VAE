@@ -5,18 +5,7 @@ import tensorflow as tf
 from scipy.io import savemat
 sess = tf.InteractiveSession()
 
-from model.wrappers import *
-
-
-# Tss = tf.placeholder(tf.int32,name='Tss')
-# vt_op = tf.identity(graph.get_tensor_by_name("transpose_2:0"),"vt_L")
-# st_op = tf.identity(graph.get_tensor_by_name("transpose_3:0"),"st_L")
-# x_rec_mu_mu = tf.identity(graph.get_tensor_by_name("rec_mean:0"),"x_rec_mu_mu")
-# x_rec_mu_L = tf.identity(graph.get_tensor_by_name("rec_mean:0"),"x_rec_mu_L")
-# s0_log_sigma_sq = tf.identity(graph.get_tensor_by_name("enc_s0/fully_connected_3/BiasAdd:0"),"s0_log_sigma_sq")
-# v0_log_sigma_sq = tf.identity(graph.get_tensor_by_name("enc_v0/fully_connected_3/BiasAdd:0"),"v0_log_sigma_sq")
-# saver = tf.train.Saver(save_relative_paths=True)
-# saver.save(sess, 'neurips-results')
+from model.data.wrappers import *
 
 ########### setup params, data, etc ###########
 # read params
@@ -143,6 +132,8 @@ if q==2 or q==3:
 
 
 X,ts = dataset.train.next_batch(5)
+if 'nonuniform' not in task:
+    ts = ts[0]
 Xrec = reconstruct(X,L=1,ts=ts)  # samples from the decoder
 Xrec = np.squeeze(Xrec,1) # N,T,D
 plot_reconstructions(task,X,Xrec,ts,show=False,fname='plots/{:s}/rec_{:s}.png'.format(task,'train'))

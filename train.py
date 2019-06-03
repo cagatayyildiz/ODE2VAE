@@ -92,6 +92,7 @@ for epoch in range(num_epoch):
 			values_batch = sess.run(ops_,feed_dict={vae.train:True, vae.Tss:Tss})
 			values = [values[i]+values_batch[i+1] for i in range(5)]
 			num_iter += 1
+			break
 		except tf.errors.OutOfRangeError:
 			break
 	values = [values[i]/num_iter for i in range(5)]
@@ -110,15 +111,15 @@ for epoch in range(num_epoch):
 	if val_lhood>min_val_lhood:
 		min_val_lhood = val_lhood
 		vae.save_model(ckpt_dir,ext)
-		X,t_ = dataset.train.next_batch(5)
-		Xrec = vae.reconstruct(X)
-		zt   = vae.integrate(X)
-		plot_reconstructions(task,X,Xrec,t_,show=False,fname='plots/{:s}/rec_tr_{:s}.png'.format(task,ext))
+		X,ttr = dataset.train.next_batch(5)
+		Xrec = vae.reconstruct(X,ttr)
+		zt   = vae.integrate(X,ttr)
+		plot_reconstructions(task,X,Xrec,ttr,show=False,fname='plots/{:s}/rec_tr_{:s}.png'.format(task,ext))
 		plot_latent(zt,vae.q,vae.L,show=False,fname='plots/{:s}/latent_tr_{:s}.png'.format(task,ext))
-		X,t_ = dataset.val.next_batch(5)
-		Xrec = vae.reconstruct(X)
+		X,tval = dataset.val.next_batch(5)
+		Xrec = vae.reconstruct(X,tval)
 		# zt   = vae.integrate(X)
-		plot_reconstructions(task,X,Xrec,t_,show=False,fname='plots/{:s}/rec_val_{:s}.png'.format(task,ext))
+		plot_reconstructions(task,X,Xrec,tval,show=False,fname='plots/{:s}/rec_val_{:s}.png'.format(task,ext))
 		# plot_latent(zt,vae.q,vae.L,show=False,fname='plots/{:s}/latent_val_{:s}.png'.format(task,ext))
 		val_err = -1
 		if 'mnist' in task:
