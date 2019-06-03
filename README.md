@@ -23,7 +23,7 @@ The datasets can be downloaded from [here](https://www.dropbox.com/sh/q8l6zh2dpb
 2. rotating mnist dataset generated using [this implementation](https://github.com/ChaitanyaBaweja/RotNIST)
 3. bouncing ball dataset generated using [the code](http://www.cs.utoronto.ca/~ilya/code/2008/RTRBM.tar) provided with the original paper.
 
-Do not forget to give the path to the data folder as an argument to bash scripts. 
+Do not forget to update the dataset paths in bash scripts with the local path to the downloaded folder.
 
 ## Reproducing NeurIPS 2019 Results
 [This folder](https://www.dropbox.com/sh/ldp5w3f6dgacpsa/AACwIFkJQ_OhNeTKxDB6YWcza?dl=0) (20 MB) contains TensorFlow graphs of already optimized models. After downloading run
