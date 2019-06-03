@@ -1,14 +1,13 @@
 # ode2vae
 TensorFlow implementation of [Deep generative second order ODEs with Bayesian neural networks](https://arxiv.org/pdf/1905.10994.pdf) by Çağatay Yıldız, Markus Heinonen and Harri Lahdesmäki.
 
-We tackle the problem of learning low-rank latent representations of possibly high-dimensional sequential data trajectories. Our model extends Variational Auto-Encoders (VAEs) for sequential data with a latent space governed by a continuous-time probabilistic ordinary differential equation (ODE). We propose
-1. a powerful second order ODE that allows modelling the latent dynamic ODE state decomposed as position and momentum
-2. a deep Bayesian neural network to infer latent dynamics.
-
 <p align="center">
   <img align="middle" src="main_fig.png" alt="model architecture" width="1000"/>
 </p>
 
+We tackle the problem of learning low-rank latent representations of possibly high-dimensional sequential data trajectories. Our model extends Variational Auto-Encoders (VAEs) for sequential data with a latent space governed by a continuous-time probabilistic ordinary differential equation (ODE). We propose
+1. a powerful second order ODE that allows modelling the latent dynamic ODE state decomposed as position and momentum
+2. a deep Bayesian neural network to infer latent dynamics.
 
 ## Setup
 The code is developed and tested on python3.7 and TensorFlow 1.13. [hickle](https://pypi.org/project/hickle/) library is also needed to load the datasets. 
@@ -32,3 +31,8 @@ Do not forget to give the path to the data folder as an argument to bash scripts
 ./scripts/test_bballs.sh
 ```
 to reproduce the results. Similarly, the path argument in test bash files needs to be overriden by the downloaded checpoint folder path. 
+
+<p align="center">
+  <img align="middle" src="walking4.gif" alt="test + synthesized sequences" width="1000"/>
+  <img align="middle" src="walking3.png" alt="test + synthesized sequences"/>
+</p>
