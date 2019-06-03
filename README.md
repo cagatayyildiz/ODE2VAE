@@ -34,5 +34,10 @@ to reproduce the results. Similarly, the path argument in test bash files needs 
 
 <p align="center">
   <img align="middle" src="walking4.gif" alt="test + synthesized sequences" width="1000"/>
-  <img align="middle" src="walking3.gif" alt="test + synthesized sequences"/>
+  <img align="middle" src="walking3.gif" alt="test + synthesized sequences" width="300"/>
+</p>
+
+<p float="center">
+  <img src="/slow.gif" width="100" />
+  <img src="/fast.gif" width="100" /> 
 </p>
