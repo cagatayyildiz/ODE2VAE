@@ -38,6 +38,14 @@ to reproduce the results. Similarly, the path argument in test bash files needs 
 </p>
 
 <p float="center">
-  <img src="/slow.gif" width="100" />
-  <img src="/fast.gif" width="100" /> 
+  <img src="/0.gif" width="100" />
+  <img src="/2.gif" width="100" /> 
+  <img src="/3.gif" width="100" /> 
+  <img src="/11.gif" width="100" /> 
+  <img src="/5.gif" width="100" /> 
+  <img src="/6.gif" width="100" /> 
+  <img src="/12.gif" width="100" /> 
+  <img src="/7.gif" width="100" /> 
+  <img src="/10.gif" width="100" /> 
+  <img src="/8.gif" width="100" /> 
 </p>
