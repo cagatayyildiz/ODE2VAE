@@ -10,7 +10,7 @@ We tackle the problem of learning low-rank latent representations of possibly hi
 2. a deep Bayesian neural network to infer latent dynamics.
 
 ## Setup
-The code is developed and tested on python3.7 and TensorFlow 1.13. [hickle](https://pypi.org/project/hickle/) library is also needed to load the datasets. 
+The code is developed and tested on `python3.7` and `TensorFlow 1.13`. [`hickle`](https://pypi.org/project/hickle/) library is also needed to load the datasets. 
 
 Training and test scripts are placed in the [`scripts`](./scripts) directory. In order to run reproduce an experiment, run the following command from the project root folder:
 ```
