@@ -2,7 +2,7 @@
 TensorFlow implementation of [Deep generative second order ODEs with Bayesian neural networks](https://arxiv.org/pdf/1905.10994.pdf) by Çağatay Yıldız, Markus Heinonen and Harri Lahdesmäki.
 
 <p align="center">
-  <img align="middle" src="main_fig.png" alt="model architecture" width="1000"/>
+  <img align="middle" src="images/main_fig.png" alt="model architecture" width="1000"/>
 </p>
 
 We tackle the problem of learning low-rank latent representations of possibly high-dimensional sequential data trajectories. Our model extends Variational Auto-Encoders (VAEs) for sequential data with a latent space governed by a continuous-time probabilistic ordinary differential equation (ODE). We propose
@@ -33,23 +33,28 @@ Do not forget to give the path to the data folder as an argument to bash scripts
 to reproduce the results. Similarly, the path argument in test bash files needs to be overriden by the downloaded checpoint folder path. 
 
 <p align="center">
-  <img align="middle" src="walking4.gif" alt="test + synthesized sequences" width="1000"/>
-  <img align="middle" src="walking3.gif" alt="test + synthesized sequences" width="300"/>
+  <img align="middle" src="images/walking4.gif" alt="test + synthesized sequences" width="1000"/>
+  <img align="middle" src="images/walking3.gif" alt="test + synthesized sequences" width="300"/>
 </p>
 
 <p float="center">
-  <img src="/0.gif" width="100" />
-  <img src="/2.gif" width="100" /> 
-  <img src="/3.gif" width="100" /> 
-  <img src="/11.gif" width="100" /> 
-  <img src="/5.gif" width="100" /> 
-  <img src="/6.gif" width="100" /> 
-  <img src="/12.gif" width="100" /> 
-  <img src="/7.gif" width="100" /> 
-  <img src="/10.gif" width="100" /> 
-  <img src="/8.gif" width="100" /> 
+  <img src="images/0.gif" width="100" />
+  <img src="images/2.gif" width="100" /> 
+  <img src="images/3.gif" width="100" /> 
+  <img src="images/11.gif" width="100" /> 
+  <img src="images/5.gif" width="100" /> 
+  <img src="images/6.gif" width="100" /> 
+  <img src="images/12.gif" width="100" /> 
+  <img src="images/7.gif" width="100" /> 
+  <img src="images/10.gif" width="100" /> 
+  <img src="images/8.gif" width="100" /> 
 </p>
 
 <p align="center">
-  <img src="/rec-1.gif" width="100" /> 
+  <img src="images/rec-1.gif" width="100" /> 
+</p>
+
+
+<p align="center">
+  <img align="middle" src="images/bballs.png" alt="bouncing ball data + reconstructions" width="1000"/>
 </p>
