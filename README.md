@@ -1,5 +1,5 @@
 # ode2vae
-TensorFlow implementation of [Deep generative second order ODEs with Bayesian neural networks](https://arxiv.org/pdf/1905.10994.pdf) by Çağatay Yıldız, Markus Heinonen and Harri Lahdesmäki.
+TensorFlow implementation of [Deep generative second order ODEs with Bayesian neural networks](https://arxiv.org/pdf/1905.10994.pdf) by [Çağatay Yıldız](http://cagatayyildiz.github.io), [Markus Heinonen](https://users.aalto.fi/~heinom10/) and [Harri Lahdesmäki](https://users.ics.aalto.fi/harrila/).
 
 <p align="center">
   <img align="middle" src="images/main_fig.png" alt="model architecture" width="1000"/>
