@@ -16,6 +16,11 @@ Training and test scripts are placed in the [`scripts`](./scripts) directory. In
 ```
 ./scripts/train_bballs.sh
 ```
+Once the optimization is completed, you can see the performance on test set by running
+```
+./scripts/test_bballs.sh
+```
+
 
 ## Datasets
 The datasets can be downloaded from [here](https://www.dropbox.com/sh/q8l6zh2dpb7fi9b/AACX3OVDEBxjHMcwx_Ik6cyha?dl=0) (1.9 GB). The folders contain
