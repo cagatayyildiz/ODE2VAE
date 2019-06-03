@@ -75,7 +75,7 @@ vae = ODE2VAE(sess, f_opt, q, D, X, t, NF_enc=NF_enc, NF_dec=NF_dec, KW_enc=KW_e
 ########### training loop ###########
 t0 = time.time()
 
-print('{:>15s}'.format("iteration")+'{:>15s}'.format("total_cost")+'{:>15s}'.format("E[p(x|z)]")+'{:>15s}'.format("E[p(z)]")+'{:>15s}'.format("E[q(z)]")+\
+print('{:>15s}'.format("epoch")+'{:>15s}'.format("total_cost")+'{:>15s}'.format("E[p(x|z)]")+'{:>15s}'.format("E[p(z)]")+'{:>15s}'.format("E[q(z)]")+\
 	  '{:>16s}'.format("E[KL[ode||enc]]")+'{:>15s}'.format("valid_cost")+'{:>15s}'.format("valid_error"))
 print('{:>15s}'.format("should")+'{:>15s}'.format("decrease")+'{:>15s}'.format("increase")+'{:>15s}'.format("increase")+'{:>15s}'.format("decrease")+\
 	  '{:>16s}'.format("decrease")+'{:>15s}'.format("decrease")+'{:>15s}'.format("decrease"))
@@ -92,7 +92,6 @@ for epoch in range(num_epoch):
 			values_batch = sess.run(ops_,feed_dict={vae.train:True, vae.Tss:Tss})
 			values = [values[i]+values_batch[i+1] for i in range(5)]
 			num_iter += 1
-			break
 		except tf.errors.OutOfRangeError:
 			break
 	values = [values[i]/num_iter for i in range(5)]
