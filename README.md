@@ -47,12 +47,12 @@ to reproduce the results. Similarly, the path argument in test bash files needs 
   <img src="images/2.gif" width="100" /> 
   <img src="images/3.gif" width="100" /> 
   <img src="images/11.gif" width="100" /> 
-  <img src="images/5.gif" width="100" /> 
+  <img src="images/8.gif" width="100" /> 
   <img src="images/6.gif" width="100" /> 
   <img src="images/12.gif" width="100" /> 
   <img src="images/7.gif" width="100" /> 
   <img src="images/10.gif" width="100" /> 
-  <img src="images/8.gif" width="100" /> 
+  <img src="images/5.gif" width="100" /> 
 </p>
 
 <p align="center">
