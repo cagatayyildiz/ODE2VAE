@@ -41,7 +41,7 @@ to reproduce the results. Similarly, the path argument in test bash files needs 
 #### Example Walking Sequences
 <p align="center">
   <img align="middle" src="images/walking4.gif" alt="test + synthesized sequences" width="1000"/>
-  <img align="middle" src="images/walking3.gif" alt="test + synthesized sequences" width="300"/>
+  <img align="middle" src="images/walking.gif" alt="test + synthesized sequences" width="300"/>
 </p>
 
 #### Rotating Threes
