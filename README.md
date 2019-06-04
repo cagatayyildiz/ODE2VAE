@@ -37,11 +37,13 @@ Do not forget to update the dataset paths in bash scripts with the local path to
 ```
 to reproduce the results. Similarly, the path argument in test bash files needs to be overriden by the downloaded checpoint folder path. 
 
+### Example Walking Sequences
 <p align="center">
   <img align="middle" src="images/walking4.gif" alt="test + synthesized sequences" width="1000"/>
   <img align="middle" src="images/walking3.gif" alt="test + synthesized sequences" width="300"/>
 </p>
 
+### Rotating Threes
 <p float="center">
   <img src="images/0.gif" width="100" />
   <img src="images/10.gif" width="100" /> 
@@ -53,11 +55,7 @@ to reproduce the results. Similarly, the path argument in test bash files needs 
   <img src="images/7.gif" width="100" /> 
 </p>
 
-<p align="center">
-  <img src="images/rec-1.gif" width="100" /> 
-</p>
-
-
+### Long Term Bouncing Balls Predictions
 <p align="center">
   <img align="middle" src="images/bballs.png" alt="bouncing ball data + reconstructions" width="1000"/>
 </p>
