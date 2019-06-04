@@ -1,5 +1,6 @@
-# ode2vae
-TensorFlow implementation of [Deep generative second order ODEs with Bayesian neural networks](https://arxiv.org/pdf/1905.10994.pdf) by [Çağatay Yıldız](http://cagatayyildiz.github.io), [Markus Heinonen](https://users.aalto.fi/~heinom10/) and [Harri Lahdesmäki](https://users.ics.aalto.fi/harrila/).
+# <img src="https://latex.codecogs.com/gif.latex?\Huge{\textbf{ODE}\mbox{\Huge$^2$}\textbf{VAE}}" /> 
+
+TensorFlow implementation of [Deep generative second order ODEs with Bayesian neural networks](https://arxiv.org/pdf/1905.10994.pdf) by <br/> [Çağatay Yıldız](http://cagatayyildiz.github.io), [Markus Heinonen](https://users.aalto.fi/~heinom10/) and [Harri Lahdesmäki](https://users.ics.aalto.fi/harrila/).
 
 <p align="center">
   <img align="middle" src="images/main_fig.png" alt="model architecture" width="1000"/>
@@ -30,20 +31,20 @@ The datasets can be downloaded from [here](https://www.dropbox.com/sh/q8l6zh2dpb
 
 Do not forget to update the dataset paths in bash scripts with the local path to the downloaded folder.
 
-## Reproducing NeurIPS 2019 Results
+## Figures from Trained Models
 [This folder](https://www.dropbox.com/sh/ldp5w3f6dgacpsa/AACwIFkJQ_OhNeTKxDB6YWcza?dl=0) (20 MB) contains TensorFlow graphs of already optimized models. After downloading run
 ```
 ./scripts/test_bballs.sh
 ```
 to reproduce the results. Similarly, the path argument in test bash files needs to be overriden by the downloaded checpoint folder path. 
 
-### Example Walking Sequences
+#### Example Walking Sequences
 <p align="center">
   <img align="middle" src="images/walking4.gif" alt="test + synthesized sequences" width="1000"/>
   <img align="middle" src="images/walking3.gif" alt="test + synthesized sequences" width="300"/>
 </p>
 
-### Rotating Threes
+#### Rotating Threes
 <p float="center">
   <img src="images/0.gif" width="100" />
   <img src="images/10.gif" width="100" /> 
@@ -55,7 +56,7 @@ to reproduce the results. Similarly, the path argument in test bash files needs 
   <img src="images/7.gif" width="100" /> 
 </p>
 
-### Long Term Bouncing Balls Predictions
+#### Long Term Bouncing Balls Predictions
 <p align="center">
   <img align="middle" src="images/bballs.png" alt="bouncing ball data + reconstructions" width="1000"/>
 </p>
