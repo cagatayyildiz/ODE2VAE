@@ -9,7 +9,7 @@ class ODE2VAE_Args:
     def __init__(self):
         self.parser = argparse.ArgumentParser(description='Inputs to the DVAE model')
 
-        self.parser.add_argument('--data_root', type=str, default='../neurips19/data',
+        self.parser.add_argument('--data_root', type=str, default='data',
                         help='root of the data folder')
         self.parser.add_argument('--ckpt_dir', type=str, default='checkpoints',
                         help='checkpoints folder')

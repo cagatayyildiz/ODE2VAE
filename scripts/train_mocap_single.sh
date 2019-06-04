@@ -1,6 +1,7 @@
 #!/bin/bash
 python train.py \
   --task mocap_single \
+  --data_root data \
   --q 3 \
   --Hf 30 \
   --He 30 \

@@ -1,6 +1,7 @@
 #!/bin/bash
 python train.py \
   --task mnist \
+  --data_root data \
   --q 20 \
   --Hf 50 \
   --amort_len 3 \

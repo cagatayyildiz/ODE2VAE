@@ -1,6 +1,7 @@
 #!/bin/bash
 python train.py \
   --task mnist_nonuniform \
+  --data_root data \
   --q 8 \
   --Hf 50 \
   --amort_len 1 \

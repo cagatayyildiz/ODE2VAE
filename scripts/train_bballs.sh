@@ -1,6 +1,7 @@
 #!/bin/bash
 python train.py \
   --task bballs \
+  --data_root data \
   --q 25 \
   --Hf 100 \
   --amort_len 3 \
