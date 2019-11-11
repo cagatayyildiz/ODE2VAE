@@ -1,4 +1,4 @@
-# <img src="https://latex.codecogs.com/gif.latex?\Huge{\textbf{ODE}\mbox{\Huge$^2$}\textbf{VAE}}" /> 
+# <img src="https://latex.codecogs.com/gif.latex?\Huge{\textbf{ODE}\mbox{\Huge$^2$}\textbf{VAE}}" />
 
 TensorFlow implementation of [Deep generative second order ODEs with Bayesian neural networks](https://arxiv.org/pdf/1905.10994.pdf) by <br/> [Çağatay Yıldız](http://cagatayyildiz.github.io), [Markus Heinonen](https://users.aalto.fi/~heinom10/) and [Harri Lahdesmäki](https://users.ics.aalto.fi/harrila/).
 
@@ -9,6 +9,11 @@ TensorFlow implementation of [Deep generative second order ODEs with Bayesian ne
 We tackle the problem of learning low-rank latent representations of possibly high-dimensional sequential data trajectories. Our model extends Variational Auto-Encoders (VAEs) for sequential data with a latent space governed by a continuous-time probabilistic ordinary differential equation (ODE). We propose
 1. a powerful second order ODE that allows modelling the latent dynamic ODE state decomposed as position and momentum
 2. a deep Bayesian neural network to infer latent dynamics.
+
+## Video
+Here is our video summarizing the paper:
+
+[![ODE2VAE video](https://img.youtube.com/vi/PscfJTyELbQ/0.jpg)](https://www.youtube.com/watch?v=PscfJTyELbQ)
 
 ## Setup
 The code is developed and tested on `python3.7` and `TensorFlow 1.13`. [`hickle`](https://pypi.org/project/hickle/) library is also needed to load the datasets. 
