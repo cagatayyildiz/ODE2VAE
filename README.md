@@ -1,9 +1,9 @@
 # <img src="https://latex.codecogs.com/gif.latex?\Huge{\textbf{ODE}\mbox{\Huge$^2$}\textbf{VAE}}" />
 
-TensorFlow implementation of [Deep generative second order ODEs with Bayesian neural networks](https://arxiv.org/pdf/1905.10994.pdf) by <br/> [Çağatay Yıldız](http://cagatayyildiz.github.io), [Markus Heinonen](https://users.aalto.fi/~heinom10/) and [Harri Lahdesmäki](https://users.ics.aalto.fi/harrila/).
+TensorFlow and PyTorch implementation of [Deep generative second order ODEs with Bayesian neural networks](https://arxiv.org/pdf/1905.10994.pdf) by <br/> [Çağatay Yıldız](http://cagatayyildiz.github.io), [Markus Heinonen](https://users.aalto.fi/~heinom10/) and [Harri Lahdesmäki](https://users.ics.aalto.fi/harrila/).
 
 <p align="center">
-  <img align="middle" src="images/main_fig.png" alt="model architecture" width="1000"/>
+  <img align="middle" src="images/ode2vae-anim.gif" alt="model architecture" width="1000"/>
 </p>
 
 We tackle the problem of learning low-rank latent representations of possibly high-dimensional sequential data trajectories. Our model extends Variational Auto-Encoders (VAEs) for sequential data with a latent space governed by a continuous-time probabilistic ordinary differential equation (ODE). We propose
@@ -15,7 +15,10 @@ Here is our video summarizing the paper:
 
 [![ODE2VAE video](https://img.youtube.com/vi/PscfJTyELbQ/0.jpg)](https://www.youtube.com/watch?v=PscfJTyELbQ)
 
-## Setup
+## Minimal PyTorch Implementation
+In addition to the TensorFlow implementation decribed below, we provide a minimal, easy-to-follow PyTorch implementation for clarity. Check [ode2vae_mnist_minimal.py](./ode2vae_mnist_minimal.py) for more details. The dataset needed to run the script is [here](https://www.dropbox.com/s/aw0rgwb3iwdd1zm/rot-mnist-3s.mat?dl=0). Make sure to update the path or put both files into the same folder.
+
+## Replicating the Experiments
 The code is developed and tested on `python3.7` and `TensorFlow 1.13`. [`hickle`](https://pypi.org/project/hickle/) library is also needed to load the datasets. 
 
 Training and test scripts are placed in the [`scripts`](./scripts) directory. In order to run reproduce an experiment, run the following command from the project root folder:
@@ -27,8 +30,7 @@ Once the optimization is completed, you can see the performance on test set by r
 ./scripts/test_bballs.sh
 ```
 
-
-## Datasets
+## All Datasets
 The datasets can be downloaded from [here](https://www.dropbox.com/sh/q8l6zh2dpb7fi9b/AACX3OVDEBxjHMcwx_Ik6cyha?dl=0) (1.9 GB). The folders contain
 1. preprocessed walking sequences from [CMU mocap library](http://mocap.cs.cmu.edu/)
 2. rotating mnist dataset generated using [this implementation](https://github.com/ChaitanyaBaweja/RotNIST)
