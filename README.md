@@ -19,7 +19,16 @@ Here is our video summarizing the paper:
 In addition to the TensorFlow implementation decribed below, we provide a minimal, easy-to-follow PyTorch implementation for clarity. Check [torch_ode2vae_minimal.py](./torch_ode2vae_minimal.py) for more details. The dataset needed to run the script is [here](https://www.dropbox.com/s/aw0rgwb3iwdd1zm/rot-mnist-3s.mat?dl=0). Make sure to update the path or put both files into the same folder.
 
 ## Replicating the Experiments
-The code is developed and tested on `python3.7` and `TensorFlow 1.13`. [`hickle`](https://pypi.org/project/hickle/) library is also needed to load the datasets. 
+The code is developed and tested on `python3.7` and `TensorFlow 1.13`. [`hickle`](https://pypi.org/project/hickle/) library is also needed to load the datasets. Full list of dependencies:
+```
+python==3.7
+tensorflow==1.13
+matplotlib
+scipy
+hickle==3.4
+tensorflow_probability
+torch, torchdiffeq # for torch code
+```
 
 Training and test scripts are placed in the [`scripts`](./scripts) directory. In order to run reproduce an experiment, run the following command from the project root folder:
 ```
