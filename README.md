@@ -16,7 +16,7 @@ Here is our video summarizing the paper:
 [![ODE2VAE video](https://img.youtube.com/vi/PscfJTyELbQ/0.jpg)](https://www.youtube.com/watch?v=PscfJTyELbQ)
 
 ## Minimal PyTorch Implementation
-In addition to the TensorFlow implementation decribed below, we provide a minimal, easy-to-follow PyTorch implementation for clarity. Check [torch_ode2vae_minimal.py](./torch_ode2vae_minimal.py) for more details. The dataset needed to run the script is [here](https://www.dropbox.com/s/aw0rgwb3iwdd1zm/rot-mnist-3s.mat?dl=0). Make sure to update the path or put both files into the same folder.
+In addition to the TensorFlow implementation decribed below, we provide a minimal, easy-to-follow PyTorch implementation for clarity. Check [torch_ode2vae_minimal.py](./torch_ode2vae_minimal.py) for more details. The dataset needed to run the script is [here](https://1drv.ms/u/s!AoCg_EHL_pqdhvJXVYVDdL2ww4ibOA). Make sure to update the path or put both files into the same folder.
 
 ## Replicating the Experiments
 The code is developed and tested on `python3.7` and `TensorFlow 1.13`. [`hickle`](https://pypi.org/project/hickle/) library is also needed to load the datasets. Full list of dependencies:
@@ -40,7 +40,7 @@ Once the optimization is completed, you can see the performance on test set by r
 ```
 
 ## All Datasets
-The datasets can be downloaded from [here](https://www.dropbox.com/sh/q8l6zh2dpb7fi9b/AACX3OVDEBxjHMcwx_Ik6cyha?dl=0) (1.9 GB). The folders contain
+The datasets can be downloaded from [here](https://1drv.ms/u/s!AoCg_EHL_pqdhd8yEN6X9lMh4ICsPg?e=tqRARi) (1.9 GB). The folders contain
 1. preprocessed walking sequences from [CMU mocap library](http://mocap.cs.cmu.edu/)
 2. rotating mnist dataset generated using [this implementation](https://github.com/ChaitanyaBaweja/RotNIST)
 3. bouncing ball dataset generated using [the code](http://www.cs.utoronto.ca/~ilya/code/2008/RTRBM.tar) provided with the original paper.
@@ -48,7 +48,7 @@ The datasets can be downloaded from [here](https://www.dropbox.com/sh/q8l6zh2dpb
 Do not forget to update the dataset paths in bash scripts with the local path to the downloaded folder.
 
 ## Figures from Trained Models
-[This folder](https://www.dropbox.com/sh/ldp5w3f6dgacpsa/AACwIFkJQ_OhNeTKxDB6YWcza?dl=0) (20 MB) contains TensorFlow graphs of already optimized models. After downloading run
+[This folder](https://1drv.ms/u/s!AoCg_EHL_pqdhdJ-rgX9HBwVSk7MoQ?e=IhORZE) (20 MB) contains TensorFlow graphs of already optimized models. After downloading run
 ```
 ./scripts/test_bballs.sh
 ```
