@@ -56,6 +56,7 @@ to reproduce the results. Similarly, the path argument in test bash files needs 
 
 #### Example Walking Sequences
 <p align="center">
+  <img align="middle" src="images/walking-side-by-side.gif" alt="latent space + reconstrucctions" width="1000"/>
   <img align="middle" src="images/walking4.gif" alt="test + synthesized sequences" width="1000"/>
   <img align="middle" src="images/walking2.gif" alt="test + synthesized sequences" width="300"/>
 </p>
