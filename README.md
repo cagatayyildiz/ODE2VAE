@@ -40,7 +40,7 @@ Once the optimization is completed, you can see the performance on test set by r
 ```
 
 ## All Datasets
-The datasets can be downloaded from [here](https://drive.google.com/drive/folders/1c0UMSqlvZRORmCNN_qVdiqu2n8sKcwnh?usp=drive_link) (1.9 GB). The folders contain
+The datasets can be downloaded from [here](https://drive.google.com/drive/folders/1c0UMSqlvZRORmCNN_qVdiqu2n8sKcwnh?usp=sharing) (1.9 GB). The folders contain
 1. preprocessed walking sequences from [CMU mocap library](http://mocap.cs.cmu.edu/)
 2. rotating mnist dataset generated using [this implementation](https://github.com/ChaitanyaBaweja/RotNIST)
 3. bouncing ball dataset generated using [the code](http://www.cs.utoronto.ca/~ilya/code/2008/RTRBM.tar) provided with the original paper.
